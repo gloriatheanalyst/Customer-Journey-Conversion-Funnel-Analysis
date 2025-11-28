@@ -57,3 +57,40 @@ TimeOnPage_seconds — Time spent on each page
 ItemsInCart — Number of items added
 
 Purchased — 1 if purchase occurred, else 0
+
+## 5. Tools & Technologies
+### Python (Jupyter Notebook)
+
+Used for:
+
+Data cleaning
+
+Preprocessing
+
+EDA
+
+Funnel analysis
+
+Visualizations
+
+#### Libraries
+
+pandas
+
+numpy
+
+matplotlib
+
+seaborn
+
+#### Power BI
+
+Used to create:
+
+Funnel visualization
+
+Conversion dashboards
+
+Country and device insights
+
+KPI cards
