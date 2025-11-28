@@ -1,3 +1,19 @@
+📦 customer-journey-analysis/
+│
+├── 📁 data/
+│   ├── raw_dataset.csv
+│   └── customer_journey_cleaned_dataset.csv
+│
+├── 📁 notebook/
+│   └── analysis.ipynb
+│
+├── 📁 powerbi/
+│   └── dashboard.pbix
+│
+├── README.md
+└── requirements.txt
+
+
 # Customer-Journey-Conversion-Funnel-Analysis
  A Data Analytics Project Using Python & Power BI
 
@@ -59,8 +75,7 @@ ItemsInCart — Number of items added
 Purchased — 1 if purchase occurred, else 0
 
 ## 5. Tools & Technologies
-### Python (Jupyter Notebook)
-
+#### Python (Jupyter Notebook)
 Used for:
 Data cleaning
 Preprocessing
