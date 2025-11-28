@@ -12,3 +12,37 @@ The project includes:
 - Power BI dashboard visualizing user flow and conversion drivers
 
 - Recommendations to improve conversion and reduce cart abandonment
+
+## 2. Problem Statement
+
+E-commerce websites experience significant drop-offs throughout the customer journey. The goal of this project is to:
+
+- Understand how users move through the product funnel (Home → Product Page → Cart → Checkout → Confirmation → Purchase).
+
+- Identify where and why the largest drop-offs occur.
+
+- Analyze which user attributes (Device Type, Country, Referral Source) influence purchase likelihood.
+
+- Quantify conversion rates at each stage.
+
+## 3. Project Objectives
+
+1. Clean and prepare the dataset for analysis.
+
+2. Perform exploratory data analysis to understand user behavior.
+
+3. Build a full conversion funnel and measure drop-offs.
+
+4. Analyze conversion rates by device, referral, and country.
+
+5. Identify user behavior patterns such as time spent and cart usage.
+
+6. Develop meaningful insights and recommendations.
+
+7. Build a Power BI dashboard for visualization.
+
+
+
+
+
+Provide actionable recommendations to improve the conversion funnel.
