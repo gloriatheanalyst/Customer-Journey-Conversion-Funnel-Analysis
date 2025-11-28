@@ -99,4 +99,4 @@ The following steps were applied:
 
 ✔ Exported cleaned dataset
 
-A fully cleaned dataset was saved as: https://github.com/gloriatheanalyst/Customer-Journey-Conversion-Funnel-Analysis/blob/main/customer_journey_cleaned_dataset.csv
+A fully cleaned dataset was saved as: **customer_journey_cleaned_dataset.csv**
