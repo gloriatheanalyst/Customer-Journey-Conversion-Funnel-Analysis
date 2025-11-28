@@ -39,13 +39,13 @@ The dataset consists of user browsing sessions on an e-commerce platform.
 
 **Key columns include:**
 
-SessionID — Unique session identifier
-UserID — Unique user identifier
-Timestamp — Event time
-PageType — Page visited (home, product_page, cart, checkout, confirmation)
-DeviceType — Mobile, Desktop, Tablet
-Country — User's country
-ReferralSource — Traffic origin (Google, Social, Email, etc.)
-TimeOnPage_seconds — Time spent on each page
-ItemsInCart — Number of items added
-Purchased — 1 if purchase occurred, else 0
+SessionID: Unique session identifier
+UserID: Unique user identifier
+Timestamp: Event time
+PageType: Page visited (home, product_page, cart, checkout, confirmation)
+DeviceType: Mobile, Desktop, Tablet
+Country: User's country
+ReferralSource: Traffic origin (Google, Social, Email, etc.)
+TimeOnPage_seconds: Time spent on each page
+ItemsInCart: Number of items added
+Purchased: 1 if purchase occurred, else 0
