@@ -86,11 +86,17 @@ KPI cards
 The following steps were applied:
 
 ✔ Converted Timestamp column to datetime
+
 ✔ Removed duplicate rows
+
 ✔ Removed negative values in time and items
+
 ✔ Sorted by SessionID + Timestamp
+
 ✔ Checked missing values (none found)
+
 ✔ Standardized categories
+
 ✔ Exported cleaned dataset
 
 A fully cleaned dataset was saved as:
