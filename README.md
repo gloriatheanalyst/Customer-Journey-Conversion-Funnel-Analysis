@@ -1,18 +1,3 @@
-📦 customer-journey-analysis/
-│
-├── 📁 data/
-│   ├── raw_dataset.csv
-│   └── customer_journey_cleaned_dataset.csv
-│
-├── 📁 notebook/
-│   └── analysis.ipynb
-│
-├── 📁 powerbi/
-│   └── dashboard.pbix
-│
-├── README.md
-└── requirements.txt
-
 
 # Customer-Journey-Conversion-Funnel-Analysis
  A Data Analytics Project Using Python & Power BI
@@ -95,3 +80,17 @@ Funnel visualization
 Conversion dashboards
 Country and device insights
 KPI cards
+
+### 6. Data Cleaning Summary
+
+The following steps were applied:
+
+✔ Converted Timestamp column to datetime
+✔ Removed duplicate rows
+✔ Removed negative values in time and items
+✔ Sorted by SessionID + Timestamp
+✔ Checked missing values (none found)
+✔ Standardized categories
+✔ Exported cleaned dataset
+
+A fully cleaned dataset was saved as:
