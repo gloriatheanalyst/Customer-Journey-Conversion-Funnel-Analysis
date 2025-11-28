@@ -62,35 +62,21 @@ Purchased — 1 if purchase occurred, else 0
 ### Python (Jupyter Notebook)
 
 Used for:
-
 Data cleaning
-
 Preprocessing
-
 EDA
-
 Funnel analysis
-
 Visualizations
 
 #### Libraries
-
 pandas
-
 numpy
-
 matplotlib
-
 seaborn
 
 #### Power BI
-
 Used to create:
-
 Funnel visualization
-
 Conversion dashboards
-
 Country and device insights
-
 KPI cards
