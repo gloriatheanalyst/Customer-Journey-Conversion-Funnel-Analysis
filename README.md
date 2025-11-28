@@ -7,8 +7,8 @@ This project analyzes an e-commerce customer journey dataset to understand user 
 
 The project includes:
 
--- Python notebook with cleaning + EDA + funnel modeling
+- Python notebook with cleaning + EDA + funnel modeling
 
--- Power BI dashboard visualizing user flow and conversion drivers
+- Power BI dashboard visualizing user flow and conversion drivers
 
--- Recommendations to improve conversion and reduce cart abandonment
+- Recommendations to improve conversion and reduce cart abandonment
