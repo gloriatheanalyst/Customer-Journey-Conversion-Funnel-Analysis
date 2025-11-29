@@ -158,7 +158,7 @@ Bias & Fairness: Differences across countries or devices must not be interpreted
 
 - Build a predictive model for purchase likelihood
 - Use clustering to identify user personas
-- Add A/B testing insights
+- Add A/B tests on product page CTAs, checkout flows, and referral campaigns to validate which changes reduce drop-offs and improve conversions.”
 - Integrate more behavioral features (scroll depth, clicks, bounce rate)
 - Build real-time funnel dashboards
 
