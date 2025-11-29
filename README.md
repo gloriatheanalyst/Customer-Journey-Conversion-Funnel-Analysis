@@ -77,27 +77,12 @@ Key EDA Steps
 #### Core Findings
 
 1. Time on page does not strongly correlate with purchase.
-
-2. Desktop (20.35%) users had slightly higher conversion rates than mobile (*20.17%*) and tablet(*20.08%*)
-
-3. Google search(*21.64%*) drove the highest volume of sessions but not the highest conversions.
-   	ReferralSource	Sessions	Conversions	ConversionRate
-0	Direct	1226	243	19.82%
-1	Email	1251	251	20.06%
-2	Google	1280	277	21.64%
-3	Social Media	1243	239	19.23%
-
-5. Some countries had significantly better cart-to-purchase performance.
+2. Desktop (**20.35%**) users had slightly higher conversion rates than mobile (**20.17%**) and tablet(**20.08%**)
+3. Google search(**21.64%**) drove the highest volume of sessions but not the highest conversions.
+4. Some countries had significantly better cart-to-purchase performance. France(**22.61%**) and USA(**20.82%**) had high conversions.
 
 ### 8. Conversion Funnel Analysis
-
-#### Stages analyzed:
-- Home
-- Product Page
-- Cart
-- Checkout
-- Confirmation
-- Purchase
+Stages: Home → Product → Cart → Checkout → Confirmation → Purchase
 
 #### Metrics computed:
 - Sessions at each stage
@@ -107,83 +92,67 @@ Key EDA Steps
 - Cart-to-purchase and checkout-to-purchase KPIs
 
 #### Key Findings:
-- Largest drop-off occurred between Product Page → Cart
+- Largest drop-off occurred between Product Page → Cart (**59.89%**)
 - Checkout completion rate was relatively strong
-- A small percentage of sessions reached the final confirmation stage
 - Device and country impacted funnel progression
 
 ### 9. Insights & Interpretations
 🔹 Insight 1 — Time Spent is Not Predictive
-
 Purchasers and non-purchasers showed almost identical time-on-page averages.
 Longer browsing is not a sign of higher likelihood to convert.
 
 🔹 Insight 2 — Device Matters
-
 Desktop users converted the most, suggesting mobile experience may need optimization.
 
 🔹 Insight 3 — Referral Source Quality Varies
-
 Google brings the most sessions, but Email and Direct traffic showed better conversion ratios.
 
 🔹 Insight 4 — Major Drop-Off at Add-to-Cart Stage
-
 This suggests product pages may need:
-
 - clearer pricing
 - more compelling CTAs
 - faster loading
 
 🔹 Insight 5 — Country Differences
-
 Some countries have significantly higher funnel completion, indicating potential targeting opportunities.
 
 ### 10. Power BI Dashboard Overview
 
-The Power BI report includes:
-
-- Overview KPIs (Total Sessions, Purchases, Conversion Rate)
+Includes:
+- KPI cards (Sessions, Purchases, Conversion Rate)
 - Device conversion comparison
 - Country performance charts
 - Referral source conversion bar chart
-- Full customer journey funnel visualization
-- Time-on-page comparison insights
+- Full funnel visualization
+- Behavioral insights (time-on-page vs conversion)
 
 This dashboard allows stakeholders to monitor conversion performance at a glance.
 ![Customer Journey Conversion Analysis Dashboard](https://github.com/gloriatheanalyst/Customer-Journey-Conversion-Funnel-Analysis/blob/main/Customer%20Journey%20Conversion%20Analysis%20Power%20Bi.png)
 
 ### 11. Recommendations
-✔ Optimize Mobile UI/UX
-
+1. Optimize Mobile UI/UX
 Improve button size, layout, loading speed.
 
-✔ Improve Product Page Clarity
-
+2. Improve Product Page Clarity
 Reduce information overload, clearer pricing, stronger call-to-action.
 
-✔ Strengthen Cart Experience
-
+3. Strengthen Cart Experience
 Show shipping cost estimates earlier, simplify cart layout.
 
-✔ Enhance High-Intent Traffic Sources
-
+ 4. Enhance High-Intent Traffic Sources
 Focus on Email, Direct, and Search retargeting.
 
-✔ Reduce Friction in Checkout
-
+5. Reduce Friction in Checkout
 Auto-fill fields, reduce form steps, enable guest checkout.
 
-✔ Personalize User Experience
-
+6. Personalize User Experience
 Recommend products based on browsing history.
 
 ### 12. Ethical Considerations
 
-User Privacy:
-Dataset contains anonymized user IDs; no personal information is included.
+User Privacy: Dataset contains anonymized user IDs; no personal information is included.
 
-Bias & Fairness:
-Differences across countries or devices must not be interpreted as user deficiencies; instead, system design may contribute.
+Bias & Fairness: Differences across countries or devices must not be interpreted as user deficiencies; instead, system design may contribute.
 
 ### 13. Next Steps
 
@@ -201,9 +170,7 @@ Differences across countries or devices must not be interpreted as user deficien
 - No information on marketing campaigns
 - Funnel stages are assumed based on PageType sequence
 
-These limitations affect how broadly the findings can be generalized.
-
 ### 15. Conclusion
 
-This project successfully analyzed user behavior across an e-commerce customer journey. By combining Python-based EDA with Power BI funnel visualization, we identified key drop-off points, behavioral insights, and actionable recommendations.
+This project successfully analyzed user behavior across an e-commerce customer journey. By combining Python-based EDA with Power BI funnel visualization, it identified key drop-off points, behavioral insights, and actionable recommendations.
 These insights can greatly support strategic decisions in UX improvement, marketing targeting, and funnel optimization.
