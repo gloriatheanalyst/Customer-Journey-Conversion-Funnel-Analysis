@@ -174,3 +174,10 @@ Bias & Fairness: Differences across countries or devices must not be interpreted
 
 This project successfully analyzed user behavior across an e-commerce customer journey. By combining Python-based EDA with Power BI funnel visualization, it identified key drop-off points, behavioral insights, and actionable recommendations.
 These insights can greatly support strategic decisions in UX improvement, marketing targeting, and funnel optimization.
+
+### 16. AI Assistance
+I used AI to:
+- Debug and correct my Python code
+- Understand errors and fix error messages in my code
+- Improving code structure and readability
+- Clarifying best practices for data cleaning and visualization
