@@ -4,40 +4,38 @@
 
 ## 1. Project Overview
 
-This project analyzes an e-commerce customer journey dataset to understand user behavior, identify drop-off points, and uncover factors affecting conversion rates. A full funnel analysis was conducted, alongside exploratory data analysis (EDA), demographic behavior analysis, and time-on-page insights.
+This project maps the full e-commerce customer journey — from homepage visits to purchases — to uncover drop-off points, device/channel differences, and behavioral patterns that impact conversion. By combining Python-based exploratory data analysis (EDA) with interactive Power BI dashboards, it delivers actionable insights to reduce cart abandonment and improve conversion.
 
-The project includes:
+Key Deliverables:
 
-- Python notebook with cleaning + EDA + funnel modeling
-
-- Power BI dashboard visualizing user flow and conversion drivers
-
-- Recommendations to improve conversion and reduce cart abandonment
+- Cleaned dataset **[customer_journey_cleaned_dataset.csv](https://github.com/gloriatheanalyst/Customer-Journey-Conversion-Funnel-Analysis/blob/main/customer_journey_cleaned_dataset.csv)**
+- Python notebook (data cleaning, EDA, funnel modeling)
+- Power BI dashboard (conversion funnel, device, country, referral insights)
+- Recommendations report
 
 ## 2. Problem Statement
 
-E-commerce websites experience significant drop-offs throughout the customer journey. The goal of this project is to:
+E-commerce websites experience significant drop-offs throughout the customer journey. Understanding these drop-offs is critical for improving user experience, reducing cart abandonment, and increasing revenue.
 
-- Understand how users move through the product funnel (Home → Product Page → Cart → Checkout → Confirmation → Purchase).
-- Identify where and why the largest drop-offs occur.
-- Analyze which user attributes (Device Type, Country, Referral Source) influence purchase likelihood.
+The project aims to:
+- Map the funnel (Home → Product → Cart → Checkout → Confirmation → Purchase).
+- Identify where the largest drop-offs occur.
+- Analyze how device type, country, and referral source influence purchase likelihood.
 - Quantify conversion rates at each stage.
-- Provide actionable recommendations to improve the conversion funnel.
+- Provide actionable recommendations to optimize the funnel.
 
-## 3. Project Objectives
+## 3. Objectives
 
 1. Clean and prepare the dataset for analysis.
 2. Perform exploratory data analysis to understand user behavior.
 3. Build a full conversion funnel and measure drop-offs.
 4. Analyze conversion rates by device, referral, and country.
 5. Identify user behavior patterns such as time spent and cart usage.
-6. Develop meaningful insights and recommendations.
-7. Build a Power BI dashboard for visualization.
+6. Develop insights and recommendations.
+7. Build an interactive Power BI dashboard for visualization.
 
 ## 4. Dataset Description
 Source: https://www.kaggle.com/datasets/sufya6/e-commerce-customer-journey-click-to-conversion/data
-
-The dataset consists of user browsing sessions on an e-commerce platform.
 
 **Key columns include:**
 - SessionID — Unique session identifier
@@ -50,37 +48,22 @@ The dataset consists of user browsing sessions on an e-commerce platform.
 - TimeOnPage_seconds — Time spent on each page
 - ItemsInCart — Number of items added
 - Purchased — 1 if purchase occurred, else 0
+
 ## 5. Tools & Technologies
-#### Python (Jupyter Notebook)
-Used for:
-- Data cleaning
-- Preprocessing
-- EDA
-- Funnel analysis
-- Visualizations
-#### Libraries
-- pandas
-- numpy
-- matplotlib
-- seaborn
-#### Power BI
-- Used to create:
-- Funnel visualization
-- Conversion dashboards
-- Country and device insights
-- KPI cards
+#### Python (Jupyter Notebook):Data cleaning, Preprocessing, EDA, Funnel analysis, Visualizations
+- Libraries: pandas, numpy, matplotlib, seaborn
+
+#### Power BI: Funnel visualization, conversion dashboards, KPI cards, country/device insights, slicers, drill-through
 
 ### 6. Data Cleaning Summary
 The following steps were applied:
 - Converted Timestamp column to datetime
-- Removed duplicate rows
-- Removed negative values in time and items
+- Checked for duplicate rows (none found)
+- Checked and Removed negative values in time and items if any
 - Sorted by SessionID + Timestamp
--  Checked missing values (none found)
--  Standardized categories
+- Checked missing values (none found)
+- Standardized categories
 - Exported cleaned dataset
-
-A fully cleaned dataset was saved as: **[customer_journey_cleaned_dataset.csv](https://github.com/gloriatheanalyst/Customer-Journey-Conversion-Funnel-Analysis/blob/main/customer_journey_cleaned_dataset.csv)**
 
 ### 7. Exploratory Data Analysis (EDA)
 Key EDA Steps
@@ -88,18 +71,23 @@ Key EDA Steps
 - Items in cart distribution
 - Boxplots comparing features vs purchase outcomes
 - Unique user and session counts
-- Category distributions for Device, Country, Referral, PageType
+- Category distributions (Device, Country, Referral, PageType)
 - Analysis of browsing patterns
 
 #### Core Findings
 
 1. Time on page does not strongly correlate with purchase.
 
-2. Desktop users had slightly higher conversion rates than mobile/tablet.
+2. Desktop (20.35%) users had slightly higher conversion rates than mobile (*20.17%*) and tablet(*20.08%*)
 
-3. Google search drove the highest volume of sessions but not the highest conversions.
+3. Google search(*21.64%*) drove the highest volume of sessions but not the highest conversions.
+   	ReferralSource	Sessions	Conversions	ConversionRate
+0	Direct	1226	243	19.82%
+1	Email	1251	251	20.06%
+2	Google	1280	277	21.64%
+3	Social Media	1243	239	19.23%
 
-4. Some countries had significantly better cart-to-purchase performance.
+5. Some countries had significantly better cart-to-purchase performance.
 
 ### 8. Conversion Funnel Analysis
 
@@ -189,7 +177,15 @@ Auto-fill fields, reduce form steps, enable guest checkout.
 
 Recommend products based on browsing history.
 
-### 12. Next Steps
+### 12. Ethical Considerations
+
+User Privacy:
+Dataset contains anonymized user IDs; no personal information is included.
+
+Bias & Fairness:
+Differences across countries or devices must not be interpreted as user deficiencies; instead, system design may contribute.
+
+### 13. Next Steps
 
 - Build a predictive model for purchase likelihood
 - Use clustering to identify user personas
@@ -197,7 +193,17 @@ Recommend products based on browsing history.
 - Integrate more behavioral features (scroll depth, clicks, bounce rate)
 - Build real-time funnel dashboards
 
-### 13. Conclusion
+### 14. Limitations
+
+- Dataset is simulated (not real-world user data)
+- No product-level details (price, category)
+- No clickstream depth (scrolls, button clicks)
+- No information on marketing campaigns
+- Funnel stages are assumed based on PageType sequence
+
+These limitations affect how broadly the findings can be generalized.
+
+### 15. Conclusion
 
 This project successfully analyzed user behavior across an e-commerce customer journey. By combining Python-based EDA with Power BI funnel visualization, we identified key drop-off points, behavioral insights, and actionable recommendations.
 These insights can greatly support strategic decisions in UX improvement, marketing targeting, and funnel optimization.
